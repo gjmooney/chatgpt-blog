@@ -1,3 +1,5 @@
+import Sidebar from "@/components/Sidebar";
+import Subscribe from "@/components/Subscribe";
 import Other from "@/components/home/Other";
 import Tech from "@/components/home/Tech";
 import Travel from "@/components/home/Travel";
@@ -13,9 +15,13 @@ export default function Home() {
             <Tech />
             <Travel />
             <Other />
-            <div className="hidden md:block">{/* <Subscribe /> */}</div>
+            <div className="hidden md:block">
+              <Subscribe />{" "}
+            </div>
           </div>
-          <div className="basis-1/4">{/* <Sidebar /> */}</div>
+          <div className="basis-1/4">
+            <Sidebar />
+          </div>
         </div>
       </main>
     </>
