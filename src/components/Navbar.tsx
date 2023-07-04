@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import Ad1 from "../../public/assets/ad-1.jpg";
 import SocialLinks from "./SocialLinks";
 
 type Props = {};
@@ -25,7 +27,15 @@ const Navbar = (props: Props) => {
           <h1 className="font-bold text-3xl md:text-5xl">Blog of the future</h1>
           <p className="text-sm mt-3">Blog about robots stealing the future</p>
         </div>
-        <div className="basis-full relative w-auto h-32 bg-wh-500">Image</div>
+        <div className="basis-full relative w-auto h-32">
+          <Image
+            fill
+            style={{ objectFit: "cover" }}
+            alt="advert-1"
+            src={Ad1}
+            placeholder="blur"
+          />
+        </div>
       </div>
       <hr className="border-1 mx-10" />
     </header>

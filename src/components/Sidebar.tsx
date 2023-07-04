@@ -1,8 +1,8 @@
+import Image from "next/image";
 import SocialLinks from "./SocialLinks";
 import Subscribe from "./Subscribe";
-import Ad2 from "/public/assets/ad-2.png";
 import AboutProfile from "/public/assets/about-profile.jpg";
-import Image from "next/image";
+import Ad2 from "/public/assets/ad-2.png";
 
 type Props = {};
 
