@@ -1,15 +1,13 @@
 "use client";
 
-import { PencilSquareIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Post } from "@prisma/client";
 import { Editor, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Image from "next/image";
 import React, { useState } from "react";
 import SocialLinks from "../SocialLinks";
-import EditorMenuBar from "./EditorMenuBar";
-import CategoryAndEdit from "./CategoryAndEdit";
 import Article from "./Article";
+import CategoryAndEdit from "./CategoryAndEdit";
 
 type Props = {
   post: Post;
