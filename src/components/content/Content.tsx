@@ -34,9 +34,8 @@ const Content = ({ post }: Props) => {
   };
 
   const handleOnChangeTitle = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    if (title) {
-      setTitleError(e.target.value);
-    }
+    if (title) setTitleError("");
+    setTitle(e.target.value);
   };
 
   const handleOnChangeContent = ({ editor }: any) => {
