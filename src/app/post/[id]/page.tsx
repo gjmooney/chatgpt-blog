@@ -1,7 +1,7 @@
 import { prisma } from "@/app/api/client";
-import Content from "@/components/Content";
+
 import Sidebar from "@/components/Sidebar";
-import { FormattedPost } from "@/types";
+import Content from "@/components/content/Content";
 import { Post as PostType } from "@prisma/client";
 
 type Props = {
