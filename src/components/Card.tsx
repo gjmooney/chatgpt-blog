@@ -26,7 +26,7 @@ const Card = ({
     <div className={className}>
       <Link
         className="basis-full hover:opacity-70"
-        href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}
+        href={`/post/${post?.id}`}
       >
         <div className={`relative w-auto mb-3 ${imageHeight}`}>
           <Image
